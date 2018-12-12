@@ -7,6 +7,11 @@
   grid-auto-flow: dense;
   width: 60%;
   margin: auto;
+  min-height: 100vh;
+  position: relative;
+  padding: 20px;
+  border: 1px solid #bfbfbf;
+  border-radius: 5px;
   img {
     width: 100%;
     height: 100%;

@@ -1,4 +1,10 @@
-<div class="container" *ngIf="images">
+<div
+  class="container"
+  *ngIf="images"
+  infiniteScroll
+  [infiniteScrollDistance]="1"
+  [infiniteScrollThrottle]="1000"
+  (scrolled)="onScroll()">
   <div class="{{image.class}}" *ngFor="let image of images">
     <img [src]="image.url" alt="{{image.url}}">
   </div>
