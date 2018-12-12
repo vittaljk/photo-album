@@ -1,0 +1,5 @@
+<div class="container" *ngIf="images">
+  <div class="{{image.class}}" *ngFor="let image of images">
+    <img [src]="image.url" alt="{{image.url}}">
+  </div>
+</div>
