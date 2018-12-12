@@ -4051,6 +4051,10 @@ ngx-infinite-scroll@^6.0.1:
   dependencies:
     opencollective "^1.0.3"
 
+ngx-smart-modal@^7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/ngx-smart-modal/-/ngx-smart-modal-7.1.0.tgz#133a59f90b09fb789e83e397e77a7eeb955e87f9"
+
 nice-try@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"

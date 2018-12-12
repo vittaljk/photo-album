@@ -13,7 +13,7 @@ npm install -g @angular/cli
 
 # Run using
 ```bash
-ng serve
+npm run start
 ```
 
 application will be launched in http://localhost:4200/

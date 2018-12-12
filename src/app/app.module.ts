@@ -4,6 +4,7 @@ import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 
 import { AppComponent } from './app.component';
 import { PhotoAlbumComponent } from './photo-album/photo-album.component';
+import { NgxSmartModalModule } from 'ngx-smart-modal';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { PhotoAlbumComponent } from './photo-album/photo-album.component';
   ],
   imports: [
     BrowserModule,
-    InfiniteScrollModule
+    InfiniteScrollModule,
+    NgxSmartModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgxSmartModalService } from 'ngx-smart-modal';
 
 interface IImage {
   url: string;
@@ -22,8 +23,9 @@ export class PhotoAlbumComponent implements OnInit {
 
   // Url to fetch random images from picsum photos
   baseUrl = 'https://picsum.photos';
+  previewImage: string;
 
-  constructor() { }
+  constructor(public ngxSmartModalService: NgxSmartModalService) { }
 
   ngOnInit() {
     // Loading 100 images initially
@@ -65,6 +67,11 @@ export class PhotoAlbumComponent implements OnInit {
         class: this.getRandomClass()
       });
     }
+  }
+
+  showPreview(image: IImage) {
+    this.previewImage = image.url;
+    this.ngxSmartModalService.getModal('myModal').open();
   }
 
   getRandomClass() {

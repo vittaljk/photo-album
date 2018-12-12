@@ -1,3 +1,5 @@
+
+
 <div
   class="container"
   *ngIf="images"
@@ -6,6 +8,10 @@
   [infiniteScrollThrottle]="1000"
   (scrolled)="onScroll()">
   <div class="{{image.class}}" *ngFor="let image of images">
-    <img [src]="image.url" alt="{{image.url}}">
+    <img [src]="image.url" alt="{{image.url}}" (click)="showPreview(image)" >
   </div>
 </div>
+
+<ngx-smart-modal #myModal identifier="myModal">
+  <img [src]="previewImage" alt="" class="preview-img">
+</ngx-smart-modal>

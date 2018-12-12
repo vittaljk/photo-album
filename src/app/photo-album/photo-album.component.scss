@@ -17,6 +17,7 @@
     height: 100%;
     object-fit: cover;
     border-radius: 2px;
+    cursor: pointer;
   }
 }
 
@@ -31,4 +32,9 @@
 .big {
   grid-column: span 2;
   grid-row: span 2;
+}
+
+.preview-img {
+  width: calc(100% - 60px);
+  padding: 30px;
 }
